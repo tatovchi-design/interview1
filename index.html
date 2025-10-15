@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Конструктор компетенций</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#4f46e5',
+                hover: '#4338ca',
+                focus: '#6366f1',
+              },
+              secondary: '#10b981',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      @media print {
+        body {
+          background-color: #fff;
+        }
+        header, .no-print {
+          display: none !important;
+        }
+        main {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+        .printable-content {
+           padding: 1rem;
+        }
+        .card-print {
+          box-shadow: none !important;
+          border: 1px solid #e2e8f0;
+          break-inside: avoid;
+          margin-top: 1.5rem;
+        }
+        .card-print h2 {
+           font-size: 1.25rem;
+        }
+        .text-primary, .text-primary-DEFAULT {
+            color: #1e293b !important;
+        }
+        .bg-primary {
+           background-color: #e2e8f0 !important;
+           color: #1e293b !important;
+        }
+         .text-primary\/20 {
+            color: #64748b !important;
+         }
+        textarea {
+            border: none !important;
+            background-color: #f8fafc !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
